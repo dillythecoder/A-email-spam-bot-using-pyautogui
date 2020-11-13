@@ -1,0 +1,27 @@
+import pyautogui
+import time
+
+pyautogui.keyDown("ctrl")
+pyautogui.keyDown("t")
+pyautogui.keyUp("ctrl")
+pyautogui.keyUp("t")
+pyautogui.write("https://mail.google.com/mail/u/0/?tab=wm&ogbl#inbox%22)
+pyautogui.press("enter")
+
+for i in range(10):
+    pyautogui.moveTo(100, 250)
+    time.sleep(15)
+    pyautogui.click()
+    time.sleep(5)
+    pyautogui.write("example@gmail.com")
+    pyautogui.press("enter")
+    time.sleep(5)
+    pyautogui.moveTo(1700, 700)
+    pyautogui.click()
+    time.sleep(2)
+    pyautogui.write("This is my email spam bot")
+    pyautogui.keyDown("ctrl")
+    pyautogui.keyDown("enter")
+    pyautogui.keyUp("ctrl")
+    pyautogui.keyUp("enter")
+    time.sleep(15)
